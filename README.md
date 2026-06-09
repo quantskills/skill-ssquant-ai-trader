@@ -1,1 +1,1 @@
-# -ssquant-ai-trader
+# ssquant-ai-trader
