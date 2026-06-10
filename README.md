@@ -54,3 +54,7 @@ ssquant-ai-trader/
 4.  运行短期回测验证。
 5.  启动 SIMNOW 策略。
 6.  创建 Cron 任务并告知用户。
+
+## 📄 许可证
+
+本项目使用 GNU General Public License v3.0，详见 [LICENSE](LICENSE)。

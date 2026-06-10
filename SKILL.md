@@ -3,7 +3,7 @@ name: ssquant-ai-trader
 description: "Generate and operate a live AI Trader from user's natural-language trading descriptions. Auto-judge automatability: clear rules become SIMNOW strategies, fuzzy/experiential rules trigger semi-automatic AI analysis with user confirmation. Handles code generation, market analysis, risk overlays, cron monitoring, notifications, and daily reports."
 version: 2.0.0
 author: SSQuant Team
-license: MIT
+license: GPL-3.0-only
 metadata:
   hermes:
     tags: [quant, trading, simnow, ai-agent, automated-trading, semi-automatic, strategy-execution, trader-generator]
