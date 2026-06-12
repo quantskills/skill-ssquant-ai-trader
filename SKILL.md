@@ -1,6 +1,8 @@
 ---
 name: ssquant-ai-trader
-description: "Generate and operate a live AI Trader from user's natural-language trading descriptions. Auto-judge automatability: clear rules become SIMNOW strategies, fuzzy/experiential rules trigger semi-automatic AI analysis with user confirmation. Handles code generation, market analysis, risk overlays, cron monitoring, notifications, and daily reports."
+description: Use when a user describes a trading strategy in natural language and
+  wants an AI Trader to judge automatability, generate SSQuant code or semi-automatic
+  analysis plans, connect to SIMNOW paper trading, monitor risk, and operate the workflow.
 version: 2.0.0
 author: SSQuant Team
 license: GPL-3.0-only
@@ -12,8 +14,40 @@ metadata:
   project_type: skill
   collection: ssquant-ai-trader
   hermes:
-    tags: [quant, trading, simnow, ai-agent, automated-trading, semi-automatic, strategy-execution, trader-generator]
-    related_skills: [writing-plans, ssquant-quant-trading, trader-generator]
+    tags:
+    - quant
+    - trading
+    - simnow
+    - ai-agent
+    - automated-trading
+    - semi-automatic
+    - strategy-execution
+    - trader-generator
+    related_skills:
+    - writing-plans
+    - ssquant-quant-trading
+    - trader-generator
+quantSkills:
+  project_type: skill
+  category: tooling
+  tags:
+  - ssquant
+  - ai-trader
+  - strategy
+  - simnow
+  - automation
+  platforms:
+  - claude-code
+  - codex
+  - openclaw
+  - cursor
+  status: stable
+  validation_level: runnable
+  maintainer_type: official
+  summary_zh: 你负责说话，AI 负责写代码、跑策略、盯盘、控风险。
+  summary_en: SSQuant AI Trader skill for converting natural-language trading descriptions
+    into automated or semi-automated strategy workflows.
+  license: GPL-3.0
 ---
 
 # AI 交易员（AI Trader）
