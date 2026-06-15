@@ -11,6 +11,8 @@ metadata:
   repository_url: https://github.com/quantskills/skill-ssquant-ai-trader
   project_type: skill
   collection: ssquant-ai-trader
+  creator: abgyjaguo
+  maintainer: abgyjaguo
   hermes:
     tags: [quant, trading, simnow, ai-agent, automated-trading, semi-automatic, strategy-execution, trader-generator]
     related_skills: [writing-plans, ssquant-quant-trading, trader-generator]
