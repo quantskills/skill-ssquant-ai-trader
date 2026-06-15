@@ -41,6 +41,7 @@ quantSkills:
   platforms:
   - claude-code
   - codex
+  - hermes
   - openclaw
   - cursor
   status: stable
