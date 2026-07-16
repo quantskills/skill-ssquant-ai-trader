@@ -53,6 +53,49 @@ quantSkills:
   license: GPL-3.0
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "用自然语言描述交易规则、入场出场、仓位、止损和时间条件",
+    "required": true
+  },
+  "fields": [
+    {
+      "key": "variety",
+      "label": "期货品种 / 合约",
+      "type": "text",
+      "required": true,
+      "placeholder": "例如 rb888、螺纹钢主力"
+    },
+    {
+      "key": "mode",
+      "label": "自动化模式",
+      "type": "select",
+      "default": "auto_assess",
+      "options": [
+        { "value": "auto_assess", "label": "由 AI 评估" },
+        { "value": "automatic", "label": "全自动" },
+        { "value": "semi_automatic", "label": "半自动" },
+        { "value": "hybrid", "label": "混合模式" }
+      ]
+    },
+    {
+      "key": "run_level",
+      "label": "执行层级",
+      "type": "select",
+      "default": "plan",
+      "options": [
+        { "value": "plan", "label": "仅评估与方案" },
+        { "value": "backtest", "label": "生成并回测" },
+        { "value": "simnow", "label": "SIMNOW 模拟盘" }
+      ]
+    }
+  ],
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}针对 {{variety}} 将自然语言交易方法转化为 SSQuant AI Trader 工作流，自动化模式为 {{mode}}，执行层级为 {{run_level}}。先检查环境并判断规则可自动化程度，叠加止损、日亏损、连续亏损和保证金风控；执行前先做短期回测验证。涉及安装、账户配置、SIMNOW 启动或下单时严格取得当前用户授权并隐藏敏感信息，未授权则停留在诊断与方案阶段，输出中文报告。"
+}
+```
+
 # AI 交易员（AI Trader）
 
 ## Overview
